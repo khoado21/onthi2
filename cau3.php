@@ -23,6 +23,7 @@ include 'baoduong.php';
 </script>
 
 <div>
+    <form action="" method="POST">
     <table>
         <h3>Thêm bảo dưỡng</h3>
         <tr>
@@ -41,7 +42,13 @@ include 'baoduong.php';
             <td>Số KM</td>
             <td><input type="text" name="SOKM"></td>
         </tr>
+        <tr>
+            <td>Nội dung</td>
+            <td><input type="text" name="NOIDUNG"></td>
+        </tr>
     </table>
+    <input type="submit" value="Thêm">
+    </form>
 
 </div>
 
