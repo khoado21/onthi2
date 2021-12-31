@@ -1,9 +1,9 @@
 <?php
+//bỏ được common helper ở mọi câu
 include 'common_helper.php';
 include 'khachhang.php';
 include 'xe.php';
 $list_kh = select_all_kh();
-$list_xe = selectxe();
 ?>
 <style>
     .border {

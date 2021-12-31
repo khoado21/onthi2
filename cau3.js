@@ -12,6 +12,7 @@ function search(SOXE) {
             console.log(json.HOTENKH);
             document.getElementById("result").value = json.HOTENKH;
         },
+        //bỏ được
         error: function(data, errorThrown){
             alert('error: ' + errorThrown +' loi');
         }

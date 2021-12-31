@@ -8,7 +8,6 @@ $congviec = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
 $data = array();
 $stt = 0;
-$tongtien = 0;
 
 foreach ($ctbd as $row) {
     foreach ($congviec as $cv) {

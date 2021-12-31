@@ -60,7 +60,6 @@
         <table class="table2"></table>
         <input type="submit" value="Thêm">
     </form>
-
 </div>
 
 <?php

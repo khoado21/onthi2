@@ -6,7 +6,6 @@ $stmt2 = $conn->query("select * from congviec");
 $ctbd = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $congviec = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
-$data = array();
 $tongtien = 0;
 
 foreach ($ctbd as $row) {
