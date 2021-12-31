@@ -18,3 +18,19 @@ function addbd(){
         echo 'success';
     }
 }
+
+function updatebd(){
+    include 'connection.php';
+    if($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        $newDate = strval(date('Y-m-d'));
+        $tongtien = $_POST['tongtien'];
+        $MABD = $_POST['SOXE'];
+        $result = $conn->prepare("UPDATE baoduong SET THANHTIEN = :THANHTIEN, NGAYTRA = :NGAYTRA WHERE MABD = :MABD");
+        $result->bindParam(':THANHTIEN', $tongtien);
+        $result->bindParam(':NGAYTRA', $newDate);
+        $result->bindParam(':MABD', $MABD);
+        $result->execute();
+        echo 'success';
+    }
+}

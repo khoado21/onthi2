@@ -1,3 +1,7 @@
+<?php
+    include 'baoduong.php';
+?>
+
 <style>
     .border {
         border: 1px solid black;
@@ -58,3 +62,7 @@
     </form>
 
 </div>
+
+<?php
+    updatebd();
+?>
